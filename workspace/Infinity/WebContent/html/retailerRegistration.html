@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Retailer Registration</title>
+<link href="../bootstrap/css/bootstrap.css" type="text/css"
+	rel="stylesheet" />
+
+<script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/registrationPage.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/geocode.js"></script>
+</head>
+
+<header>
+	<div class="row bg-primary">
+		<div class="col-sm-2">
+			<img src="../images/Infinity_Transparent.png"
+				style="width: 200px; height: 100px;">
+		</div>
+		<div class="col-sm-10">
+			<h1 style="padding-top: 10px">Infinity DTH Services</h1>
+		</div>
+	</div>
+</header>
+
+
+<body>
+
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4" style="padding-top: 1em;">
+			<form name="registration" class="form-horizontal form-credentials">
+				<fieldset>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h2 class="panel-title text-center">Retailer Registration</h2>
+						</div>
+						<div class="panel-body">
+							<div class="form-group">
+								<label for="fname" class="hide">Full Name/Company Name:</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control" id="fname"
+										placeholder="Full Name/Company Name" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="cont1" class="hide">Contact #1:</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control" id="cont1"
+										placeholder="Contact #1" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="cont2" class="hide">Contact #2:</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control" id="cont2"
+										placeholder="Contact #2" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="addr1" class="hide">Address #1:</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control" id="addr1"
+										placeholder="Address #1" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="addr2" class="hide">Address #2::</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control" id="addr2"
+										placeholder="Address #2" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="city" class="hide">City:</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control" id="city"
+										placeholder="City" value="Milford" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="state" class="hide">State:</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control" id="state"
+										placeholder="State" value="Ohio" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="zip" class="hide">Zip Code:</label>
+								<div class="col-sm-12">
+									<input type="number" class="form-control" id="zip"
+										placeholder="Zip Code" value="45150" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="tbLim" class="hide">Set Top Box Limit:</label>
+								<div class="col-sm-12">
+									<input type="number" class="form-control" id="tbLim"
+										placeholder="Set Top Box Limit" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="credLim" class="hide">Credit Limit:</label>
+								<div class="col-sm-12">
+									<input type="number" class="form-control" id="credLim"
+										placeholder="Credit Limit" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="comPer" class="hide">Commission Percentage:</label>
+								<div class="col-sm-12">
+									<input type="number" class="form-control" id="comPer"
+										placeholder="Commission Percentage" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="serChg" class="hide">Service Charges:</label>
+								<div class="col-sm-12">
+									<input type="number" class="form-control" id="serChg"
+										placeholder="Service Charges" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="invList" class="hide">Inventory List:</label>
+								<p
+									style="padding-left: 12px; margin-top: -16px; margin-bottom: -1px; font-size: 15px">Inventory
+									List:</p>
+								<div class="col-sm-12">
+									<input type="file" class="form-control" id="invList"
+										placeholder="Inventory List" required autofocus>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="createDate" class="hide">Retailer Creation
+									Date:</label>
+								<p
+									style="padding-left: 12px; margin-top: -16px; margin-bottom: -1px; font-size: 15px">Retailer
+									Creation Date:</p>
+								<div class="col-sm-12">
+									<input type="text" readonly id="x" class="form-control"
+										id="createDate" placeholder="Retailer Creation Date" required
+										autofocus>
+								</div>
+								<script>
+									document.getElementById("x").value = Date();
+								</script>
+							</div>
+
+							<div class="form-group">
+								<label for="totVal" class="hide">Total Cost of Inventory:</label>
+								<p
+									style="padding-left: 12px; margin-top: -16px; margin-bottom: -1px; font-size: 15px">Total
+									Value</p>
+								<div class="col-sm-12">
+									<input type="number" class="form-control" id="totVal"
+										placeholder="Total Cost of Inventory" required autofocus>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="panel-footer clearfix">
+							<button type="submit" onclick="check(this.form)" value="Register"
+								class="btn btn-primary pull-right">Register</button>
+							<!--TODO: Link to register page-->
+							<button class="btn btn-primary"
+								onclick="window.location.href='logIn.html'">Login</button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+</body>
+
+</html>
+
