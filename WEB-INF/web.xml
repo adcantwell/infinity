@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Infinity</display-name>
+	<welcome-file-list>
+		<welcome-file>logln.html</welcome-file>
+		<welcome-file>logln.jsp</welcome-file>
+		<welcome-file>customerRegistration.jsp</welcome-file>
+		<welcome-file>adminDashboard.jsp</welcome-file>
+		<welcome-file>customerDashboard.jsp</welcome-file>
+		<welcome-file>manageChannel.jsp</welcome-file>
+		<welcome-file>manageSetTopBox.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>CustomerController</servlet-name>
+		<servlet-class>com.controller.CustomerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerController</servlet-name>
+		<url-pattern>/CustomerController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserController</servlet-name>
+		<servlet-class>com.controller.UserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/UserController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ChannelController</servlet-name>
+		<servlet-class>com.controller.ChannelController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChannelController</servlet-name>
+		<url-pattern>/ChannelController</url-pattern>
+	</servlet-mapping>
+	
+  <servlet>
+  	<servlet-name>OperatorController</servlet-name>
+  	<servlet-class>com.controller.OperatorController</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>OperatorController</servlet-name>
+  	<url-pattern>/OperatorController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>SetTopBoxController</servlet-name>
+  	<servlet-class>com.controller.SetTopBoxController</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>SetTopBoxController</servlet-name>
+  	<url-pattern>/SetTopBoxController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>CustomerDashboardController</servlet-name>
+  	<servlet-class>com.controller.CustomerDashboardController</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>CustomerDashboardController</servlet-name>
+  	<url-pattern>/CustomerDashboardController</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  	<servlet-name>RetailerController</servlet-name>
+  	<servlet-class>com.controller.RetailerController</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>RetailerController</servlet-name>
+  	<url-pattern>/RetailerController</url-pattern>
+  </servlet-mapping>
+  
+ 
+</web-app>
